@@ -1,0 +1,34 @@
+\documentclass{article}
+
+\newtheorem {Ejercicio}{Ejercicio}
+\newenvironment{ejercicio}{\begin{Ejercicio} \rm}{\rm\end{Ejercicio}}
+\newtheorem {Quiz}[Ejercicio]{Ejercicio *}
+\newenvironment{quiz}{\begin{Quiz} \rm}{\rm\end{Quiz}}
+\newtheorem{Lectura}{Lectura}
+\newenvironment{lectura}{\begin{lectura} \rm}{\rm\end{lectura}}
+
+\newtheorem {Pregunta}{Pregunta}
+\newenvironment{pregunta}{\begin{Pregunta} \rm}{\rm\end{Pregunta}}
+
+\newenvironment{opciones}{\begin{enumerate}
+    \renewcommand{\theenumi}{\Alph{enumi}}}
+{\end{enumerate}\renewcommand{\theenumi}{\roman{enumi}}}
+
+
+
+\begin{document}
+\begin{pregunta}
+La expresi\'on:
+$(a+2b)^2$ es equivalente a:
+
+\begin{opciones}
+\item $a^2+4b^2+4ab$  %correcta
+\item $a^2+4b^2$      %distractor, eleva al cuadrado cada monomio
+\item $a^2+2b^2$      %distractor, eleva al cuadrado cada variable
+\item $a^2+2b^2 +2ab$ 
+\end{opciones}
+
+\end{pregunta}
+
+
+\end{document}
